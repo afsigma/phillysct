@@ -15,8 +15,8 @@
 
   <feature name="http://api.phonegap.com/1.0/device" />
 
-  <preference name="phonegap-version" value="2.1.0" />
-  <preference name="orientation"      value="portrait" />
+  <preference name="phonegap-version" value="2.7.0" />
+ <!-- <preference name="orientation"      value="portrait" />-->
   <preference name="target-device"    value="universal" />
   <preference name="fullscreen"       value="true" />
 
@@ -34,14 +34,14 @@
   
   
   <icon src="icon.png" />
-  
+  <!--
   <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
   
 
   
   <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
   <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
-  
+  -->
    
   
 
