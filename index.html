@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>TP</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/cordova-2.7.0.js"></script>
+    
+    <link href="themes/phillysct.min.css" rel="stylesheet" />
+    <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" />
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/responsiveslides.min.js"></script>
+
+    <script src="js/jquery.mobile-1.3.1.min.js"></script>
+
+    <link href="css/Style.css" rel="stylesheet" />
+    <script>
+        $(function () {
+            $(".rslides").responsiveSlides({
+                auto: true,             // Boolean: Animate automatically, true or false
+                speed: 2000,            // Integer: Speed of the transition, in milliseconds
+                timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+                pager: false,           // Boolean: Show pager, true or false
+                nav: false,             // Boolean: Show navigation, true or false
+                random: false,          // Boolean: Randomize the order of the slides, true or false
+                pause: false,           // Boolean: Pause on hover, true or false
+                pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+                prevText: "Previous",   // String: Text for the "previous" button
+                nextText: "Next",       // String: Text for the "next" button
+                maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+                navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+                manualControls: "",     // Selector: Declare custom pager navigation
+                namespace: "rslides",   // String: Change the default namespace used
+                before: function () { },   // Function: Before callback
+                after: function () { }     // Function: After callback
+            });
+        });
+   </script>
+
+
+
+
+</head>
+<body>
+
+<!-- Facebook -->
+	<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=553125968037413";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook -->
+
+
+<div data-role="page" class="jqm-demos ui-responsive-panel" id="panel-fixed-page1" data-url="panel-fixed-page1">
+    <div data-role="header"  data-position="fixed">
+        <h1>TP</h1>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        <a href="#add-form" data-icon="gear" data-iconpos="notext">Add</a>
+        
+    </div><!-- /header -->
+    <div data-role="content" class="jqm-content">
+        
+        <ul class="rslides">
+           <li><img src="images/kobe_fries.jpg" /></li>
+           <li><img src="images/philly_fries.jpg" /></li>
+           <li><img src="images/the-bully.jpg" /></li>
+        </ul>
+
+
+
+        <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-hover-c ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#page-cheese-steak" class="ui-link-inherit">
+				<img src="images/phillys.jpg" class="ui-li-thumb">
+				<h3 class="ui-li-heading">Authentic Philly Cheese Steak</h3>
+				<p class="ui-li-desc">Starting at $6.99</p>
+			</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+            <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-hover-c ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#page-philly-hoagie" class="ui-link-inherit">
+				<img src="images/hoagie.jpg" class="ui-li-thumb">
+				<h3 class="ui-li-heading">Authentic Philly Hoagies</h3>
+				<p class="ui-li-desc">Starting at $5.99</p>
+			</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+            <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-hover-c ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#page-fries" class="ui-link-inherit">
+				<img src="images/buffalo-fries.jpg" class="ui-li-thumb">
+				<h3 class="ui-li-heading">Signature Fries</h3>
+				<p class="ui-li-desc">Starting at $6.99</p>
+			</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+             <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-hover-c ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#page-snacks" class="ui-link-inherit">
+				<img src="images/wings.jpg" class="ui-li-thumb">
+				<h3 class="ui-li-heading">Snacks</h3>
+				<p class="ui-li-desc">Starting at $0.50</p>
+			</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+         
+
+
+    </div><!-- /content -->
+    <div data-role="footer" data-position="fixed" >
+         <div data-role="navbar">
+                <ul>
+                    <li><a href="#page-home" data-icon="home">Home</a></li>
+                    <li><a href="#page-cheese-steak" data-icon="star">Menu</a></li>
+                    <li><a href="#page-map" data-icon="search">Find Us</a></li>
+
+                </ul>
+            </div>
+    </div><!-- /footer -->
+    <div data-role="panel" data-position-fixed="true"  id="nav-panel" data-display="push">
+      
+        
+        <div data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+           
+            <div data-role="collapsible">
+                <h3>Our History</h3>
+                <p>Philly’s owner Shem Adams was born and raised in Philadelphia, a Mecca of sports good food and entrepreneurial activity. It wasn’t until he had moved to Connecticut, did he begin to realize how much the Philly culture was an integral part of his life. Although he rapidly adapted to the different pace and quality of life Connecticut had to offer, there were a few things about life in Philly he found hard to escape.
+
+Coming from a family where food was an intimate part of socialization, his most unshakable cravings were the fun foods he grew up with. He began to make frequent return trips back to Philly ‘to see his Pop’, but his first, last and intermediate stops were always to the better steak shops around the city, the ones you have to be native to know about.<a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Read More</a></p>
+            </div>
+          
+        </div>
+
+
+
+
+    </div><!-- /panel -->
+
+    <div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay"  id="add-form">
+        <form class="userform">
+            <h2>Login</h2>
+            <label for="name">Username:</label>
+            <input type="text" name="name" id="name" value="" data-clear-btn="true" data-mini="true">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true">
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><a href="#" data-rel="close" data-role="button"  data-mini="true">Cancel</a></div>
+                <div class="ui-block-b"><a href="#" data-rel="close" data-role="button"  data-mini="true">Save</a></div>
+            </div>
+        </form>
+    </div><!-- /panel -->
+</div>
+   
+</body>
+</html>
